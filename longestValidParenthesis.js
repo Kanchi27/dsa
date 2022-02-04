@@ -8,7 +8,7 @@
    let maxLength = 0;
    let open = 0;
    let close = 0;
-   for(let k of [...string]){
+   for(let k of string){
      if(k==="(") open++;
      if(k===')') close++
      if(close>open) {
