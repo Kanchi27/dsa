@@ -14,9 +14,8 @@
     }
     let result='';
     for (const [key, value] of Object.entries(freq)) {
-    result+=key+value
-     }
-    console.log(result,index+1)
+        result+=key+value
+    }
     if(resultMap[result]){
       resultMap[result].push(index+1)
     }else{
