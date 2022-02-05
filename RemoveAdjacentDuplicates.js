@@ -35,8 +35,8 @@
 
 
 
-
-
+//Time : O(n)
+//Space : O(n)
 
 
 var removeDuplicates = function(s, k) {
