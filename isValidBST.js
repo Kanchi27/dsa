@@ -20,15 +20,21 @@
  * @return {boolean}
  */
 var isValidBST = function(root) {
+    // min for root will be -infinity and max will be +infinity
     return dfs(root, Number.NEGATIVE_INFINITY , Number.POSITIVE_INFINITY);
 }
     function dfs(node, min, max){
+        // an empty binary tree is also a valid BST
         if(!node){
             return true
         }
+        // if say max <root < min , it fails above consition
         if(node.val >= max || node.val <= min){
             return false;
         }
+        // left subtree and right subtree both should be valid , only then return true
+        // for right subtree it should be greater than parent and less than max value
+        // for left subtree, it should be less than parent and greater than min value
         return dfs(node.right,node.val,max) && dfs(node.left,min,node.val);
         
     }
