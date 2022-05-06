@@ -4,11 +4,10 @@ function swap(a,b,arr){
   }
   
   function bubbleSort(arr){
-    for(let i=0;i<arr.length-1 ; i++){
+    for(let i=0;i<arr.length-1 ; i++){   
       let noSwap = true;
-      for(j=arr.length;j>i; j--){
-        console.log('i',i,'j',j)
-        if(arr[j] < arr[j-1]){
+      for(j=arr.length;j>i; j--){    
+        if(arr[j] < arr[j-1]){     // move smaller elem to front
           swap(j,j-1,arr);
           noSwap = false;
         }
