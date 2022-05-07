@@ -9,13 +9,13 @@ function insertionSort(arr){
       let temp = arr[i];
       let j = i-1;
       while(j>=0 && arr[j] > temp){
-        arr[j+1] = arr[j];
-        j--;
+        arr[j+1] = arr[j];      // j=0, arr[1] = 20 ; j=1, arr[2]= 20
+        j--;                    // j= -1 ; j=0
       }
-      arr[j+1] = temp;
+      arr[j+1] = temp; // arr[0] = 14; arr[1]= 13  ,at the end, j will point to its initial value and restore the temp var
     }
     return arr
   }
   
   
-  console.log(insertionSort([14,20,55,15,3]))
+  console.log(insertionSort([20,14,13,15,3]))
