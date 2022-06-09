@@ -1,4 +1,6 @@
 // Bubble Sort -> bubble smallest element to the top
+// O(n2) - worst case
+// best case - O(n)
 function swap(a,b,arr){
     [arr[b], arr[a]] = [arr[a], arr[b]];
   }
