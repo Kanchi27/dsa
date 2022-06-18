@@ -1,5 +1,5 @@
-// Insertion Sort -> take one element at a time and compare with the rest elements at its left , keep shifting bigger elements to right
-//...until a smaller elem is found and place the temp elem there
+// Insertion Sort -> take one element at a time and compare the element with the elements to its left,
+// until it reaches an element that is smaller than it; the element is then inserted in front of the smaller element.
 // O(n2) - worst case
 // best case - O(n) -> will be just comparison operation, no shifting 
 
