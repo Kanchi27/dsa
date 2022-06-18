@@ -9,10 +9,11 @@ function insertionSort(arr){
       let temp = arr[i];                // i=1,temp = 14
       let j = i-1;                      // j=0,arr[j] = 20
       while(j>=0 && arr[j] > temp){
-        arr[j+1] = arr[j];              // [20,20,13,15,3]
+        arr[j+1] = arr[j];              // [20,20,13,15,3] => shift greater element by 1
         j--;                            // j= -1 
       }
-      arr[j+1] = temp;                  // [14,20,13,15,3] at the end, j will point to its initial value and restore the temp var
+      arr[j+1] = temp;                  // 1st pass : [14,20,13,15,3]; 2nd pass :[13,14,20,15,3] 3rd pass: [13,14,15,20,3]; 
+                                        // at the end, j will point to its initial value and restore the temp var
     }
     return arr
   }
