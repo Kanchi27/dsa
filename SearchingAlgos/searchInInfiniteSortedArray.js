@@ -26,3 +26,4 @@ function infiniteSortedArray(arr,key) {
   return -1;
 }
 console.log(infiniteSortedArray([-101,-99,-97,-1,0,3,5,9,12,13,19,300,500,970,1000,100000,10000000,10000000000],10000000000))
+//  output : 17
