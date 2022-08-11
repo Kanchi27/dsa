@@ -1,7 +1,8 @@
+// TC : Logn + Logn = Logn
 function infiniteSortedArray(arr,key) {
   let low = 0;
   let high = 1;
-  // since length is not know, check in some exponential range to find the key in logn 
+  // since length is not know, check in some exponential range to find the key in O(logn) 
   // keep checking in multiples of 2 if key belongs to the range : (0,1) (1,2) (2,4) (4,8) (8.16) (16,32)
   while(arr[high] < key){
     if(arr[high]===key){
